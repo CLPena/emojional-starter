@@ -24,3 +24,15 @@ function sendHappyMessage(){
 // [i] can equal any index position between 0 and 2). Because there are only
 // three possible answers for the array, sometimes the message does not change
 // on the next click but will likely change in the following clicks.
+
+function sendSillyMessage(){
+  var sillyMessageArray = ["Interesting response", "Sounds ... good?", "Me too."];
+  var randomSillyMessage = sillyMessageArray[Math.floor(Math.random()*sillyMessageArray.length)];
+  message.innerText = randomSillyMessage;
+}
+
+function sendSadMessage(){
+  var sadMessageArray = ["Do you want to talk?", "Keep your head up!", "We can cry together!", "What can I do?"];
+  var randomSadMessage = sadMessageArray[Math.floor(Math.random()*sadMessageArray.length)];
+  message.innerText = randomSadMessage;
+}
