@@ -25,6 +25,18 @@ function sendHappyMessage(){
 // three possible answers for the array, sometimes the message does not change
 // on the next click but will likely change in the following clicks.
 
+// Here is my attempt to prevent repeats. Tragically, it doesn't work, but I
+// wanted to include my thought process.
+// function sendSillyMessage(){
+//   var sillyMessageArray = ["Interesting response", "Sounds ... good?", "Me too."];
+//   var randomSillyMessage = sillyMessageArray[Math.floor(Math.random()*sillyMessageArray.length)];
+//   message.innerText = randomSillyMessage;
+//   if (message.innerText = randomSillyMessage) {
+//     var randomSillyMessage = sillyMessageArray[Math.floor(Math.random()*sillyMessageArray.length)];
+//     message.innerText = randomSillyMessage;
+//   } else {};
+// };
+
 function sendSillyMessage(){
   var sillyMessageArray = ["Interesting response", "Sounds ... good?", "Me too."];
   var randomSillyMessage = sillyMessageArray[Math.floor(Math.random()*sillyMessageArray.length)];
